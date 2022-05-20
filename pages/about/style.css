@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
+/* 
+  TODO: -------------------------------------------------------------------------------------------------------------
+  TODO: DISEÑO CAROUSEL
+  TODO: -------------------------------------------------------------------------------------------------------------
+*/
+
+/* Slideshow container */
+.slideshow-container {
+  z-index: 1;
+  background: url("../../img/3.jpg");
+  /* background: #000; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color);
+  padding-top: 8rem;
+  /* max-width: 1000px; */
+  height: 20rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.slideshow-container p {
+  /* color: #000; */
+  opacity: 1;
+}
+
+/* 
+  TODO: -------------------------------------------------------------------------------------------------------------
+  TODO: DISEÑO CUERPO
+  TODO: -------------------------------------------------------------------------------------------------------------
+*/
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  /* Aumentar el tamaño del texto */
+  font-size: 2rem;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.container {
+  /* border: 2px solid #000; */
+  /* background: greenyellow; */
+  width: 90%;
+  /* max-width: 850px; */
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container p,
+h2 {
+  /* font-family: 'Special Elite', cursive; */
+  font-family: "Charter", sans-serif;
+  font-size: 20px;
+  margin-bottom: 1.5em;
+  /* Margen Inferior en los Párrafos */
+  text-align: justify;
+  line-height: 28px;
+}
+
+.content {
+  margin-left: 4em;
+  width: 70%;
+}
+
+.nav-lateral {
+  /* position: fixed; */
+  /* top: 50%; */
+  /* right: 0; */
+  border-top: 1px solid rgba(51,51,51,0.5);
+  background: #f4f6fa;
+  height: 100%;
+  width: 20%;
+  /* transform: translateY(-50%); */
+}
+
+.nav-lateral a{
+  font-weight: 300;
+  font-size: 20px;
+  color: #111;
+}
+
+.nav-lateral li{
+  padding: 8px;
+}
+
+
+/* 
+  ?: ------------------------------------------------------------------------------------------------------------
+  ?: RESPONSIVE
+  ?: ------------------------------------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 1100px) {
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-lateral {
+    /* position: absolute; */
+    /* background: cyan; */
+    width: 100%;
+  }
+}

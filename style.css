@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  /* padding-top: 6em; */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  border-radius: 16px;
+  background: #fff;
+  opacity: .5;
+  padding: 8px;
+  width: auto;
+  left: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+  color: #000;
+}
+
+.swiper-pagination-bullet {
+  height: 14px;
+  width: 14px;
+}
+
+/* 
+  TODO: -------------------------------------------------------------------------------------------------------------
+  TODO: DISEÑO CUERPO
+  TODO: -------------------------------------------------------------------------------------------------------------
+*/
+
+.test {
+  font-size: 20px;
+  font-weight: 300;
+  width: 75%;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #D4AB01;
+  border-style: dashed;
+  /* border-radius: 8px; */
+  padding: 16px 0;
+}
+
+.phrase {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 30px;
+  border: 2px solid #111;
+  border-style: dashed;
+  background: #e2b70b;
+}
+
+.main__about {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2em 3em;
+  /* border: 2px solid #111; */
+}
+
+.main__about img {
+  width: 15em;
+  height: 9em;
+}
+
+.main__about__first-title {
+  font-family: 'Merriweather', serif;
+  font-size: 19px;
+}
+
+.main__about__second-title {
+  font-family: 'Arial Nova Light', 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+
+.main__about__content {
+  padding: 0 30px;
+  margin-bottom: 2em;
+}
+
+.test a {
+  color: #000;
+  padding: 18px;
+  border-radius: 4em;
+  outline: none;
+  font-size: 18px;
+  background: var(--color);
+  transition: all .5s ease-in-out;
+}
+
+.test a:hover {
+  background: rgb(51, 51, 51);
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+.main h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  /* Aumentar el tamaño del texto */
+  font-size: 2rem;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.main__header-event {
+  display: flex;
+  color: #fff;
+  /* width: 76.9%; */
+  width: 75%;
+  height: auto;
+  background: rgb(51, 51, 51);
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 1em 1.5em;
+  margin-top: 2em;
+}
+
+.msm{
+  width: 100%;
+  text-align: right;
+}
+
+.main__header-event a{
+  color: rgb(51, 51, 51);
+  padding: 14px;
+  border-radius: 4em;
+  outline: none;
+  font-size: 18px;
+  background: var(--color);
+  transition: all .5s ease-in-out;
+}
+
+.main__header-event p{
+  width: 100%;
+}
+
+.main__header-event a:hover{
+  background: #000;
+  color: #D4AB01;
+  transition: all .5s ease-in-out;
+}
+
+.main__test{
+  /* width: 76.9%; */
+  width: 75%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.container .card {
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding: 1.5em 1em;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #111;
+  border-style: dashed;
+  cursor: pointer;
+}
+
+.container .card:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+
+/* .container .card::before{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+} */
+
+.container .card .content {
+  text-align: center;
+}
+
+.container .card .content h3 {
+  position: relative;
+  font-size: 1.5em;
+  color: #000;
+  z-index: 2;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.container .card .content img {
+  object-fit: cover;
+  width: 100%;
+  height: 8em;
+  transition: 0.5s;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.container .card .content button {
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5em;
+  padding: 0.6em 0;
+  background: var(--color);
+  color: #111;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.container .card .content button:hover,
+.container .card .content button:focus {
+  background: rgb(51, 51, 51);
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+/* 
+  ?: ------------------------------------------------------------------------------------------------------------
+  ?: RESPONSIVE
+  ?: ------------------------------------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 1100px) {
+  .phrase,
+  .test,
+  .main__header-event {
+    width: 90%;
+  }
+}
