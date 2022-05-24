@@ -106,7 +106,7 @@ body {
   /* border: 2px solid #111; */
 }
 
-.main__logo__image{
+.main__logo__image {
   background: cyan;
   width: 9em;
   height: 6.5em;
@@ -256,7 +256,40 @@ body {
 .main__test {
   /* width: 76.9%; */
   width: 75%;
+  height: 16em;
   margin: 0 auto;
+}
+
+.swiperS {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slideS {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slideS img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container {
@@ -359,12 +392,13 @@ body {
   .main__blockquote,
   .main__about,
   .main__header-event,
-  .main__logo {
+  .main__logo,
+  .main__test {
     width: 90%;
   }
 
   .main__logo__first-title,
-  .main__logo__second-title{
+  .main__logo__second-title {
     font-size: 16px;
   }
 }

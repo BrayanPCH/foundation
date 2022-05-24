@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
     TODO: --------------------------------------------------------------------------------------------------------
 */
 // Initialize Swiper
-  var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -36,3 +36,26 @@ window.addEventListener("scroll", () => {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// Initialize Swiper Secondary
+if (window.innerWidth > 1100) {
+    var swiper2 = new Swiper(".mySwiperS", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        // freeMode: true,
+        pagination: {
+            el: ".swiper-paginationS",
+            clickable: true,
+        },
+    });
+}else{
+    var swiper2 = new Swiper(".mySwiperS", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        // freeMode: true,
+        pagination: {
+            el: ".swiper-paginationS",
+            clickable: true,
+        },
+    });
+}
