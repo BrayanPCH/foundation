@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
+@import url('https://db.onlinewebfonts.com/c/341e27032d2425bbb38e134289df92e8?family=Mabry+Pro+Black');
 
 * {
   margin: 0;
@@ -24,6 +26,7 @@ body {
   width: 100%;
   height: 100%;
   justify-content: center;
+  cursor: pointer;
 }
 
 .swiper-slide {
@@ -177,10 +180,8 @@ body {
   font-weight: 300;
   width: 75%;
   margin: 0 auto;
-  background: #000;
-  color: #fff;
+  color: #000;
   text-align: center;
-  border: 1px solid #D4AB01;
   /* border-style: dashed; */
   /* border-radius: 8px; */
   padding-bottom: 0.5em;
@@ -218,7 +219,7 @@ body {
   display: flex;
   color: #fff;
   /* width: 76.9%; */
-  width: 75%;
+  width: 85%;
   height: auto;
   background: #000;
   margin: 0 auto;
@@ -258,6 +259,7 @@ body {
   width: 75%;
   height: 16em;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .swiperS {
@@ -381,6 +383,247 @@ body {
   transition: all .3s ease-in-out;
 }
 
+.main__contact{
+  background: #111;
+  padding-top: 1.5em;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main__contact__first-section {
+  background-color: rgb(199, 199, 199);
+  width: 95%;
+  height: 20em;
+  margin: 0 auto;
+}
+
+.main__contact__second-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  justify-content: center;
+  /* padding: 30px 30px; */
+}
+
+.main__contact__second-section__first-column,
+.main__contact__second-section__second-column {
+  padding: 20px 40px;
+  width: 50%;
+}
+
+.main__contact__second-section__first-column input,
+.main__contact__second-section__first-column textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #d1d2d2;
+
+  width: 100%;
+  padding: 20px;
+}
+
+.main__contact__second-section__first-column input {
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+
+.main__contact__second-section__first-column textarea {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.main__contact__second-section__first-column button {
+  cursor: pointer;
+  color: #111;
+  border-radius: 3px;
+  background-color: #D4AB01;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: right;
+
+  transition: opacity .2s ease-out;
+}
+
+.main__contact__second-section__first-column button:hover {
+  /* color: #000; */
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.main__contact__second-section__first-column h2,
+.main__contact__second-section__second-column h2 {
+  font-size: 2.5rem;
+  color: #D4AB01;
+  font-weight: 300;
+  text-align: left;
+}
+
+.main__contact__second-section__second-column__information p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.main__contact__second-section__second-column__information__city b {
+  font-family: "Poppins", sans-serif;
+}
+
+.main__contact__second-section__second-column__information p i {
+  font-size: 20px;
+  padding-right: 30px;
+  width: 20px;
+}
+
+.main__contact__second-section__second-column__information p a {
+  color: #fff;
+}
+
+.main__contact__second-section__second-column__foundation {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding-top: 1.5em;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main__contact__second-section__second-column__foundation__logo {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__contact__second-section__second-column__foundation__logo img {
+  /* margin-top: 1rem; */
+  width: 100px;
+  height: 70px;
+}
+
+.main__contact__second-section__second-column__foundation__name-foundation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.main__contact__second-section__second-column__foundation__name-foundation div p {
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  /* font-weight: 600; */
+  /* letter-spacing: 2px; */
+  font-size: 16px;
+}
+
+
+/* 
+ TODO:--------------------------------------------------------------------------------------------------
+ TODO: FOOTER PRINCIPAL PAGE
+ TODO:-------------------------------------------------------------------------------------------------- 
+*/
+
+
+footer {
+  /* left: 0px;
+  bottom: 0px; */
+  background: #111;
+  /* display: block; */
+}
+
+.decoration {
+  margin-top: 2em;
+  background: #D4AB01;
+  height: 8px;
+}
+
+.social-networks {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #111;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.social-networks a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  color: #fff;
+  margin: 16px;
+  text-align: center;
+  border-radius: 100px;
+  transition: .3s ease all;
+}
+
+.social-networks .twitter {
+  background: #1da1f2;
+}
+
+.social-networks .facebook {
+  background: #3b5998;
+}
+
+.social-networks .instagram {
+  background: #c13584;
+}
+
+.social-networks a i {
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.social-networks__icon-container:hover a {
+  animation: icono .5s ease;
+}
+
+@keyframes icono {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer-bottom__copyright {
+  /* text-transform: uppercase; */
+  font-family: 'Roboto', sans-serif;
+  opacity: .4;
+  font-weight: 200;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
 /* 
   ?: ------------------------------------------------------------------------------------------------------------
   ?: RESPONSIVE
@@ -400,5 +643,62 @@ body {
   .main__logo__first-title,
   .main__logo__second-title {
     font-size: 16px;
+  }
+
+  /*
+  * --------------------------------------------------------------------------------
+  * FOOTER
+  * --------------------------------------------------------------------------------
+  */
+
+  .about-company__first-column,
+  .about-company__second-column,
+  .about-company__third-column {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .about-company__first-column {
+    padding-top: 16px;
+  }
+
+  .about-company__third-column {
+    padding-bottom: 16px;
+  }
+
+  .about-company__first-column h2,
+  .about-company__second-column h2,
+  .about-company__third-column h2 {
+    text-align: center;
+  }
+
+  .about-company__second-column__information p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 765px) {
+
+  /*
+  * --------------------------------------------------------------------------------
+  * FOOTER
+  * --------------------------------------------------------------------------------
+  */
+
+  .about-company__first-column,
+  .about-company__second-column,
+  .about-company__third-column {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .about-company__first-column {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .google-maps {
+    width: 90%;
   }
 }
