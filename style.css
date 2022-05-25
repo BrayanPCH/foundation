@@ -384,7 +384,7 @@ body {
 }
 
 .main__contact{
-  background: #111;
+  background: #000;
   padding-top: 1.5em;
   width: 85%;
   margin: 0 auto;
@@ -464,7 +464,7 @@ body {
 
 .main__contact__second-section__first-column h2,
 .main__contact__second-section__second-column h2 {
-  font-size: 2.5rem;
+  font-size: 2em;
   color: #D4AB01;
   font-weight: 300;
   text-align: left;
@@ -651,29 +651,27 @@ footer {
   * --------------------------------------------------------------------------------
   */
 
-  .about-company__first-column,
-  .about-company__second-column,
-  .about-company__third-column {
+  .main__contact__second-section__first-column,
+  .main__contact__second-section__second-column {
     width: 100%;
     padding-top: 0;
     padding-bottom: 10px;
   }
 
-  .about-company__first-column {
+  .main__contact__second-section__first-column {
     padding-top: 16px;
   }
 
-  .about-company__third-column {
+  .main__contact__second-section__third-column {
     padding-bottom: 16px;
   }
 
-  .about-company__first-column h2,
-  .about-company__second-column h2,
-  .about-company__third-column h2 {
+  .main__contact__second-section__first-column h2,
+  .main__contact__second-section__second-column h2 {
     text-align: center;
   }
 
-  .about-company__second-column__information p {
+  .main__contact__second-section__second-column__information p {
     text-align: center;
   }
 }
@@ -686,19 +684,18 @@ footer {
   * --------------------------------------------------------------------------------
   */
 
-  .about-company__first-column,
-  .about-company__second-column,
-  .about-company__third-column {
+  .main__contact__second-section__first-column,
+  .main__contact__second-section__second-column {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .about-company__first-column {
+  .main__contact__second-section__first-column {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .google-maps {
+  .main__contact__first-section {
     width: 90%;
   }
 }
