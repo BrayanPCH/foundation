@@ -90,8 +90,8 @@ body {
   TODO: -------------------------------------------------------------------------------------------------------------
 */
 
-.main h2 {
-  margin-top: 0.5em;
+main h2 {
+  /* margin-top: 0.5em; */
   margin-bottom: 0.5em;
   /* Aumentar el tamaño del texto */
   font-size: 2rem;
@@ -218,7 +218,8 @@ body {
 .header-restoration,
 .header-event,
 .header-contact {
-  display: flex;
+  position: relative;
+  display: block;
   color: #fff;
   /* width: 76.9%; */
   width: 85%;
@@ -239,18 +240,20 @@ body {
 
 .header-restoration a,
 .header-event a {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  padding: 0 20px;
+  line-height: 60px;
+  border-left: 1.5px solid #fff;
   color: rgb(51, 51, 51);
-  padding: 14px;
-  border-radius: 4em;
+  height: 100%;
   outline: none;
   font-size: 18px;
   background: var(--color);
   transition: all .5s ease-in-out;
-}
-
-.header-restoration p,
-.header-event p {
-  width: 100%;
+  text-align: center;
 }
 
 .header-restoration a:hover,
@@ -265,6 +268,7 @@ body {
   width: 75%;
   height: 16em;
   margin: 0 auto;
+  margin-top: 1.5em;
   cursor: pointer;
 }
 
@@ -300,7 +304,7 @@ body {
   object-fit: cover;
 }
 
-.container {
+.courses-content {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -309,7 +313,7 @@ body {
   margin-bottom: 2em;
 }
 
-.container .card {
+.courses-content__card {
   position: relative;
   width: 300px;
   height: auto;
@@ -318,7 +322,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px;
+  margin: 1.5em;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 5px;
@@ -327,12 +331,12 @@ body {
   cursor: pointer;
 }
 
-.container .card:hover {
+.courses-content__card:hover {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 }
 
 
-/* .container .card::before{
+/* .courses-content__card::before{
   content: '';
   position: absolute;
   top: 2px;
@@ -343,11 +347,11 @@ body {
   pointer-events: none;
 } */
 
-.container .card .content {
+.courses-content__card__course {
   text-align: center;
 }
 
-.container .card .content h3 {
+.courses-content__card__course h3 {
   position: relative;
   font-size: 1.5em;
   color: #000;
@@ -357,7 +361,7 @@ body {
   transition: 0.5s;
 }
 
-.container .card .content img {
+.courses-content__card__course img {
   object-fit: cover;
   width: 100%;
   height: 8em;
@@ -366,7 +370,7 @@ body {
   vertical-align: middle;
 }
 
-.container .card .content button {
+.courses-content__card__course button {
   font-size: 20px;
   font-weight: 300;
   display: inline-block;
@@ -382,8 +386,8 @@ body {
   cursor: pointer;
 }
 
-.container .card .content button:hover,
-.container .card .content button:focus {
+.courses-content__card__course button:hover,
+.courses-content__card__course button:focus {
   background: rgb(51, 51, 51);
   color: #fff;
   transition: all .3s ease-in-out;
@@ -460,6 +464,9 @@ body {
   float: right;
 
   transition: opacity .2s ease-out;
+
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .contacts__second-section__first-column button:hover {
@@ -506,6 +513,9 @@ body {
   padding: 1.5em 0;
   width: 85%;
   margin: 0 auto;
+  /* position: absolute;
+  bottom: 0;
+  z-index: 1000; */
 }
 
 .contacts__second-section__second-column__foundation__logo {
