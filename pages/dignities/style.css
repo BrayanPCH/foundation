@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* 
@@ -92,6 +92,10 @@
   line-height: 1.6em;
   text-align: center;
 
+}
+
+.container h3{
+  font-weight: 200;
 }
 
 .container p {
