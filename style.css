@@ -132,7 +132,7 @@ body {
   font-size: 19px;
 }
 
-.main__blockquote {
+.blockquote {
   display: flex;
   width: 75%;
   margin: 0 auto;
@@ -144,7 +144,7 @@ body {
   border-left-width: 10px;
 }
 
-.main__blockquote::before {
+.blockquote::before {
   content: "\201c";
   font-size: 100px;
   font-family: sans-serif;
@@ -152,7 +152,7 @@ body {
   margin-top: -20px;
 }
 
-.main__blockquote__text {
+.blockquote__text {
   font-size: 20px;
   font-style: italic;
   font-weight: 300;
@@ -161,21 +161,21 @@ body {
   margin: 0;
 }
 
-.main__blockquote__text:not(:last-child) {
+.blockquote__text:not(:last-child) {
   margin-bottom: 0.5em;
 }
 
-.main__blockquote__author {
+.blockquote__author {
   font-size: 20px;
   font-weight: bold;
   text-align: right;
 }
 
-.main__blockquote__author::before {
+.blockquote__author::before {
   content: "\2014\0020";
 }
 
-.main__about {
+.about {
   font-size: 20px;
   font-weight: 300;
   width: 75%;
@@ -188,18 +188,18 @@ body {
   margin-top: 2em;
 }
 
-.main__about__content {
+.about__content {
   padding: 0 30px;
   margin-bottom: 2em;
 }
 
-.main__about__more {
+.about__more {
   display: block;
   width: 100%;
   height: 50px;
 }
 
-.main__about__more a {
+.about__more a {
   color: #000;
   padding: 18px;
   border-radius: 4em;
@@ -209,13 +209,15 @@ body {
   transition: all .5s ease-in-out;
 }
 
-.main__about__more a:hover {
+.about__more a:hover {
   background: rgb(51, 51, 51);
   color: #fff;
   transition: all .5s ease-in-out;
 }
 
-.main__header-event {
+.header-restoration,
+.header-event,
+.header-contact {
   display: flex;
   color: #fff;
   /* width: 76.9%; */
@@ -229,12 +231,14 @@ body {
   margin-top: 2em;
 }
 
-.msm {
+.header-restoration__more,
+.header-event__more {
   width: 100%;
   text-align: right;
 }
 
-.main__header-event a {
+.header-restoration a,
+.header-event a {
   color: rgb(51, 51, 51);
   padding: 14px;
   border-radius: 4em;
@@ -244,11 +248,13 @@ body {
   transition: all .5s ease-in-out;
 }
 
-.main__header-event p {
+.header-restoration p,
+.header-event p {
   width: 100%;
 }
 
-.main__header-event a:hover {
+.header-restoration a:hover,
+.header-event a:hover {
   background: #000;
   color: #D4AB01;
   transition: all .5s ease-in-out;
@@ -383,21 +389,21 @@ body {
   transition: all .3s ease-in-out;
 }
 
-.main__contact{
+.contacts{
   background: #000;
   padding-top: 1.5em;
   width: 85%;
   margin: 0 auto;
 }
 
-.main__contact__first-section {
+.contacts__first-section {
   background-color: rgb(199, 199, 199);
   width: 95%;
   height: 20em;
   margin: 0 auto;
 }
 
-.main__contact__second-section {
+.contacts__second-section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -407,14 +413,14 @@ body {
   /* padding: 30px 30px; */
 }
 
-.main__contact__second-section__first-column,
-.main__contact__second-section__second-column {
+.contacts__second-section__first-column,
+.contacts__second-section__second-column {
   padding: 20px 40px;
   width: 50%;
 }
 
-.main__contact__second-section__first-column input,
-.main__contact__second-section__first-column textarea {
+.contacts__second-section__first-column input,
+.contacts__second-section__first-column textarea {
   display: block;
   border-radius: 3px;
   box-sizing: border-box;
@@ -432,18 +438,18 @@ body {
   padding: 20px;
 }
 
-.main__contact__second-section__first-column input {
+.contacts__second-section__first-column input {
   height: 55px;
   margin-bottom: 10px;
 }
 
 
-.main__contact__second-section__first-column textarea {
+.contacts__second-section__first-column textarea {
   height: 100px;
   margin-bottom: 10px;
 }
 
-.main__contact__second-section__first-column button {
+.contacts__second-section__first-column button {
   cursor: pointer;
   color: #111;
   border-radius: 3px;
@@ -456,21 +462,21 @@ body {
   transition: opacity .2s ease-out;
 }
 
-.main__contact__second-section__first-column button:hover {
+.contacts__second-section__first-column button:hover {
   /* color: #000; */
   cursor: pointer;
   opacity: 0.9;
 }
 
-.main__contact__second-section__first-column h2,
-.main__contact__second-section__second-column h2 {
+.contacts__second-section__first-column h2,
+.contacts__second-section__second-column h2 {
   font-size: 2em;
   color: #D4AB01;
   font-weight: 300;
   text-align: left;
 }
 
-.main__contact__second-section__second-column__information p {
+.contacts__second-section__second-column__information p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -479,50 +485,50 @@ body {
   margin-bottom: 10px;
 }
 
-.main__contact__second-section__second-column__information__city b {
+.contacts__second-section__second-column__information__city b {
   font-family: "Poppins", sans-serif;
 }
 
-.main__contact__second-section__second-column__information p i {
+.contacts__second-section__second-column__information p i {
   font-size: 20px;
   padding-right: 30px;
   width: 20px;
 }
 
-.main__contact__second-section__second-column__information p a {
+.contacts__second-section__second-column__information p a {
   color: #fff;
 }
 
-.main__contact__second-section__second-column__foundation {
+.contacts__second-section__second-column__foundation {
   display: flex;
   justify-content: center;
   height: auto;
-  padding-top: 1.5em;
+  padding: 1.5em 0;
   width: 85%;
   margin: 0 auto;
 }
 
-.main__contact__second-section__second-column__foundation__logo {
+.contacts__second-section__second-column__foundation__logo {
   display: flex;
   vertical-align: middle;
   align-items: center;
   justify-content: space-between;
 }
 
-.main__contact__second-section__second-column__foundation__logo img {
+.contacts__second-section__second-column__foundation__logo img {
   /* margin-top: 1rem; */
   width: 100px;
   height: 70px;
 }
 
-.main__contact__second-section__second-column__foundation__name-foundation {
+.contacts__second-section__second-column__foundation__name-foundation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 5px;
 }
 
-.main__contact__second-section__second-column__foundation__name-foundation div p {
+.contacts__second-section__second-column__foundation__name-foundation div p {
   text-align: center;
   display: block;
   color: #fff;
@@ -632,9 +638,11 @@ footer {
 
 @media screen and (max-width: 1100px) {
 
-  .main__blockquote,
-  .main__about,
-  .main__header-event,
+  .blockquote,
+  .about,
+  .header-restoration,
+  .header-event,
+  .header-contact,
   .main__logo,
   .main__test {
     width: 90%;
@@ -651,27 +659,27 @@ footer {
   * --------------------------------------------------------------------------------
   */
 
-  .main__contact__second-section__first-column,
-  .main__contact__second-section__second-column {
+  .contacts__second-section__first-column,
+  .contacts__second-section__second-column {
     width: 100%;
     padding-top: 0;
     padding-bottom: 10px;
   }
 
-  .main__contact__second-section__first-column {
+  .contacts__second-section__first-column {
     padding-top: 16px;
   }
 
-  .main__contact__second-section__third-column {
+  .contacts__second-section__third-column {
     padding-bottom: 16px;
   }
 
-  .main__contact__second-section__first-column h2,
-  .main__contact__second-section__second-column h2 {
+  .contacts__second-section__first-column h2,
+  .contacts__second-section__second-column h2 {
     text-align: center;
   }
 
-  .main__contact__second-section__second-column__information p {
+  .contacts__second-section__second-column__information p {
     text-align: center;
   }
 }
@@ -684,18 +692,18 @@ footer {
   * --------------------------------------------------------------------------------
   */
 
-  .main__contact__second-section__first-column,
-  .main__contact__second-section__second-column {
+  .contacts__second-section__first-column,
+  .contacts__second-section__second-column {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .main__contact__second-section__first-column {
+  .contacts__second-section__first-column {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .main__contact__first-section {
+  .contacts__first-section {
     width: 90%;
   }
 }
