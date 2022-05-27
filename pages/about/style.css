@@ -152,4 +152,13 @@ h2 {
   .container {
     width: 90%;
   }
+
+  .content,
+  .nav-lateral{
+    width: 100%;
+  }
+
+  .nav-lateral{
+    padding-left: 0;
+  }
 }
