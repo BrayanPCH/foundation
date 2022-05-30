@@ -94,7 +94,7 @@
 
 }
 
-.container h3{
+.container h3 {
   font-weight: 200;
 }
 
@@ -107,8 +107,8 @@
   line-height: 28px;
 }
 
-.container__first__cell{
-  padding: 1rem; 
+.container__first__cell {
+  padding: 1rem;
 }
 
 .container__first__cell,
@@ -131,21 +131,37 @@
 .container__first__cell img,
 .container__second__cell img {
   object-fit: cover;
-  border-radius:250px;
+  border-radius: 250px;
   width: 8rem;
   height: 8rem;
 }
 
-/*
-  * -------------------------------------------------------------------------------------------------------------
-  * ACERCA DE NOSOTROS
-  * -------------------------------------------------------------------------------------------------------------
-*/
+.container__founders-list ul,
+.container__extra-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+}
 
-
+.container__founders-list li,
+.container__extra-list li {
+  font-weight: 200;
+  width: 50%;
+  font-size: 19px;
+  padding-bottom: 1em;
+}
 
 /* 
-  * -------------------------------------------------------------------------------------------------------------
-  * PAGINACION
-  * -------------------------------------------------------------------------------------------------------------
+  ?: ------------------------------------------------------------------------------------------------------------
+  ?: RESPONSIVE
+  ?: ------------------------------------------------------------------------------------------------------------
 */
+
+@media screen and (max-width: 1100px) {
+
+  .container__founders-list li,
+  .container__extra-list li {
+    width: 100%;
+  }
+}
