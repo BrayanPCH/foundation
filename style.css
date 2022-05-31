@@ -488,8 +488,11 @@ main h2 {
   margin-bottom: 10px;
 }
 
-.contacts__second-section__second-column__information__city b {
-  font-family: "Poppins", sans-serif;
+.contacts__second-section__second-column__information__city p{
+  font-family: 'Arial Nova Light';
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
 .contacts__second-section__second-column__information p i {
