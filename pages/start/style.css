@@ -1,27 +1,28 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .login {
-    display: flex;
-    width: 60%;
-    background: #fff;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
+  display: flex;
+  width: 60%;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
 }
 
 .modal {
@@ -36,7 +37,7 @@ main{
   align-items: center;
   justify-content: center;
   transition: 0.4s;
-  
+
 }
 
 .modal-container {
@@ -88,7 +89,7 @@ main{
   transform: scale(1);
   object-fit: cover;
   transition-duration: 1.2s;
-  
+
 }
 
 

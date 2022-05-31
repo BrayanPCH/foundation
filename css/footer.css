@@ -89,8 +89,11 @@ footer {
   margin-bottom: 10px;
 }
 
-.about-company__second-column__information__city b {
-  font-family: "Poppins", sans-serif;
+.about-company__second-column__information__city p {
+  font-family: 'Arial Nova Light', Arial;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
 .about-company__first-column__information p {
@@ -103,7 +106,7 @@ footer {
   width: 20px;
 }
 
-.about-company__second-column__information p a{
+.about-company__second-column__information p a {
   color: #fff;
 }
 

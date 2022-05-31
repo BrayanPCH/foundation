@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
 
 * {
   margin: 0;
@@ -87,7 +82,7 @@
 }
 
 
-.container p{
+.container p {
   /* font-family: 'Special Elite', cursive; */
   /* font-family: "Charter", sans-serif; */
   font-size: 20px;
@@ -99,25 +94,25 @@
 }
 
 .image1,
-.image2{
+.image2 {
   width: 100%;
   height: 80%;
   margin-bottom: 2em;
 }
 
 .image1 img,
-.image2 img{
+.image2 img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 .image1 label,
-.image2 label{
+.image2 label {
   display: block;
   text-align: center;
   /* font-style: italic; */
   font-weight: 100;
   font-size: 14px;
-  
+
 }

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
-  }
+}
 
 a {
 	text-decoration: none;
@@ -114,7 +117,7 @@ header .categorias a.activo {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0,0,0,.9);
+	background: rgba(0, 0, 0, .9);
 	width: 100%;
 	height: 100vh;
 	display: none;
@@ -179,9 +182,17 @@ footer .redes-sociales a {
 	transition: .3s ease all;
 }
 
-footer .redes-sociales .twitter {background: #1da1f2;}
-footer .redes-sociales .facebook {background: #3b5998;}
-footer .redes-sociales .instagram {background: #c13584;}
+footer .redes-sociales .twitter {
+	background: #1da1f2;
+}
+
+footer .redes-sociales .facebook {
+	background: #3b5998;
+}
+
+footer .redes-sociales .instagram {
+	background: #c13584;
+}
 
 footer .redes-sociales a i {
 	font-size: 20px;
@@ -194,10 +205,11 @@ footer .contenedor-icono:hover a {
 
 @keyframes icono {
 	from {
-		transform: rotate3d(0,0,0,0);
+		transform: rotate3d(0, 0, 0, 0);
 	}
+
 	to {
-		transform: rotate3d(0,1,0, 360deg);
+		transform: rotate3d(0, 1, 0, 360deg);
 	}
 }
 
@@ -208,8 +220,13 @@ footer .creado-por {
 	color: #c13584;
 }
 
-footer .creado-por a {color: #000;}
-footer .creado-por a:hover {text-decoration: underline;}
+footer .creado-por a {
+	color: #000;
+}
+
+footer .creado-por a:hover {
+	text-decoration: underline;
+}
 
 /* ------------------------- */
 /* Mediaqueries */

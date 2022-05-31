@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
 
 * {
   margin: 0;
@@ -132,12 +127,12 @@
 }
 
 .date label,
-.author label{
+.author label {
   font-weight: 500;
 }
 
 .date p,
-.author p{
+.author p {
   display: inline;
   font-weight: 200;
 }

@@ -1,5 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
 
 * {
   margin: 0;
@@ -248,14 +249,14 @@ main {
   border: 1.5px solid #000;
 }
 
-.add-new-photo{
+.add-new-photo {
   width: 25%;
   border: 1px solid #111;
   height: 10rem;
   margin: 0 auto;
 }
 
-.add-new-photo img{
+.add-new-photo img {
   /* object-fit: cover; */
   width: 100%;
   height: 100%;
@@ -267,7 +268,7 @@ main {
   padding: 10px 0;
 }
 
-.modal__container__third-box__image{
+.modal__container__third-box__image {
   display: none;
 }
 
