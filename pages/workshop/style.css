@@ -119,6 +119,15 @@
   border-radius: 6px;
   width: 100%;
   background: #ececec;
+  font-size: 18px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  width: 100%;
+  font-size: 18px;
 }
 
 .date,
@@ -126,13 +135,29 @@
   width: 50%;
 }
 
+.event-date,
+.event-time,
+.duration,
+.location {
+  width: 50%;
+  padding-bottom: 1em;
+}
+
 .date label,
-.author label {
-  font-weight: 500;
+.author label,
+.event-date label,
+.event-time label,
+.duration label,
+.location label {
+  font-weight: bold;
 }
 
 .date p,
-.author p {
+.author p,
+.event-date p,
+.event-time p,
+.duration p,
+.location p {
   display: inline;
   font-weight: 200;
 }
@@ -171,7 +196,11 @@
 
   .container__card__image,
   .date,
-  .author {
+  .author,
+  .event-date,
+  .event-time,
+  .duration,
+  .location {
     width: 100%;
   }
 
