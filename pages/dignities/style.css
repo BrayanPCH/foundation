@@ -163,7 +163,8 @@
 @media screen and (max-width: 1100px) {
 
   .container__founders-list li,
-  .container__extra-list li {
+  .container__extra-list li,
+  .content {
     width: 100%;
   }
 }
