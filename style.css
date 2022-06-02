@@ -80,6 +80,20 @@ body {
   width: 14px;
 }
 
+.welcome {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  background: rgba(212, 169, 0, 0.8);
+  padding: 3em 1em;
+  font-size: 20px;
+  font-weight: 200;
+  width: 17em;
+  border-radius: 2em;
+}
+
 /* 
   TODO: -------------------------------------------------------------------------------------------------------------
   TODO: DISEÑO CUERPO
@@ -389,7 +403,7 @@ main h2 {
   transition: all .3s ease-in-out;
 }
 
-.contacts{
+.contacts {
   background: #fff;
   padding-top: 1.5em;
   width: 85%;
@@ -420,12 +434,12 @@ main h2 {
   width: 50%;
 }
 
-.contacts__second-section__first-column{
+.contacts__second-section__first-column {
   background: #D4AB01;
   border-radius: 1em 0 0 1em;
 }
 
-.contacts__second-section__second-column{
+.contacts__second-section__second-column {
   background: #000;
   border-radius: 0 1em 1em 0;
 }
@@ -482,12 +496,13 @@ main h2 {
   opacity: 0.9;
 }
 
-.contacts__second-section__first-column h2{
+.contacts__second-section__first-column h2 {
   font-size: 2em;
   color: #000;
   font-weight: 300;
   text-align: left;
 }
+
 .contacts__second-section__second-column h2 {
   font-size: 2em;
   color: #D4AB01;
@@ -504,7 +519,7 @@ main h2 {
   margin-bottom: 10px;
 }
 
-.contacts__second-section__second-column__information__city p{
+.contacts__second-section__second-column__information__city p {
   font-family: 'Arial Nova Light';
   font-weight: bold;
   font-size: 18px;
