@@ -71,8 +71,8 @@
 }
 
 .container {
-  width: 85%;
-  max-width: 850px;
+  width: 80%;
+  /* max-width: 850px; */
   margin: 0 auto;
   margin-bottom: 2em;
   display: flex;
@@ -91,6 +91,10 @@
   /* Margen Inferior en los Párrafos */
   text-align: justify;
   line-height: 28px;
+}
+
+.content {
+  width: 66%;
 }
 
 .image1,

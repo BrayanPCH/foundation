@@ -151,28 +151,6 @@ html {
   /* transform: translate3d(0,0,0) skew(0) rotate(0); */
 }
 
-.nav-lateral {
-  height: 100%;
-  width: 34%;
-  padding-left: 5em;
-}
-
-.nav-lateral-list p {
-  width: 100%;
-  font-size: 17px;
-}
-
-.card {
-  padding: 1.5em;
-  border-bottom: 1px solid rgba(33, 33, 33, 0.6);
-  transition: box-shadow .3s;
-  cursor: pointer;
-}
-
-.card:hover {
-  box-shadow: 0 0 11px rgb(11 11 11 / 50%);
-}
-
 /* 
   ?: ------------------------------------------------------------------------------------------------------------
   ?: RESPONSIVE
@@ -185,12 +163,8 @@ html {
   }
 
   .content,
-  .nav-lateral,
   .content-list {
     width: 100%;
   }
 
-  .nav-lateral {
-    padding-left: 0;
-  }
 }

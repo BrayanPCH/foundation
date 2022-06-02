@@ -73,9 +73,16 @@
 */
 
 .container {
-  width: 90%;
+  width: 80%;
   /* max-width: 850px; */
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content{
+  width: 63%;
 }
 
 .container h2 {
