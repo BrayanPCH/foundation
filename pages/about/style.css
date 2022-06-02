@@ -74,7 +74,7 @@ html {
 .container {
   /* border: 2px solid #000; */
   /* background: greenyellow; */
-  width: 80%;
+  width: 100%;
   /* max-width: 850px; */
   margin: 2em auto;
   display: flex;
@@ -94,8 +94,15 @@ html {
   line-height: 32px;
 }
 
+.social{
+  width: 10%;
+  border-right: 1px solid rgb(230, 230, 230);
+  height: 100%;
+}
+
 .content {
-  width: 66%;
+  width: 65%;
+  padding: 0 5em;
 }
 
 .content-list {
