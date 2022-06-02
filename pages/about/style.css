@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -65,7 +65,9 @@ html {
   margin-bottom: 0.5em;
   /* Aumentar el tamaño del texto */
   font-size: 2rem;
-  line-height: 1.6em;
+  font-weight: 700;
+  line-height: 40px;
+  color: #292929;
   text-align: center;
 }
 
@@ -89,7 +91,7 @@ html {
   margin-bottom: 1.5em;
   /* Margen Inferior en los Párrafos */
   text-align: justify;
-  line-height: 28px;
+  line-height: 32px;
 }
 
 .content {
