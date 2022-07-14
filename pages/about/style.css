@@ -94,26 +94,6 @@ html {
   line-height: 32px;
 }
 
-.social{
-  width: 10%;
-  border-right: 1px solid rgb(230, 230, 230);
-  height: 100%;
-}
-
-.social a {
-  padding: 4px 7px;
-  text-align: right;
-  color: #000;
-  margin-bottom: 1em;
-  font-size: 2em;
-}
-
-.social a:hover {
-  color: #D4AB01;
-  background: #000;
-  border-radius: 8px;
-}
-
 .content {
   width: 65%;
   padding: 0 5em;
@@ -123,6 +103,7 @@ html {
   /* position: fixed; */
   /* top: 50%; */
   /* right: 0; */
+  margin: 0 auto;
   width: 50%;
   border: 1px solid rgba(51, 51, 51, 0.5);
   /* background: #f4f6fa; */
