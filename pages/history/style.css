@@ -1,95 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/bc584c6f1f3371bec3c04f1ee4d7a782?family=Arial+Nova+Light');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-}
-
-/* 
-  TODO: -------------------------------------------------------------------------------------------------------------
-  TODO: DISEÑO CAROUSEL
-  TODO: -------------------------------------------------------------------------------------------------------------
-*/
-
-/* Slideshow container */
-.slideshow-container {
-  z-index: 1;
-  background: url("../../img/3.jpg");
-  /* background: #000; */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--color);
-  padding-top: 8rem;
-  /* max-width: 1000px; */
-  height: 20rem;
-  text-align: center;
-  font-size: 4rem;
-}
-
-.slideshow-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 20rem;
-  background-color: MidnightBlue;
-  opacity: 0.3;
-}
-
-.slideshow-container p {
-  position: relative;
-  /* padding: 15% 0 10%; */
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--color);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
-}
-
-/* 
-  TODO: -------------------------------------------------------------------------------------------------------------
-  TODO: DISEÑO CUERPO
-  TODO: -------------------------------------------------------------------------------------------------------------
-*/
-
-.main h2 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  /* Aumentar el tamaño del texto */
-  font-size: 2rem;
-  line-height: 1.6em;
-  text-align: center;
-}
-
-.container {
-  width: 85%;
-  max-width: 850px;
+.row {
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
-  margin-bottom: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  padding: 0;
+  clear: both;
 }
 
+.row img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
 
-.container p,
-h2 {
-  /* font-family: 'Special Elite', cursive; */
-  /* font-family: "Charter", sans-serif; */
-  font-size: 20px;
-  margin-bottom: 1.5em;
-  /* Margen Inferior en los Párrafos */
-  text-align: justify;
+.gallery ul li {
+  float: left;
+  margin: 0 0.8771929825%;
+  overflow: hidden;
 }
 
 .gallery {
@@ -238,26 +165,167 @@ h2 {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 
-.row {
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+list-style: none;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+:target:before {
+content: "";
+display: block;
+height: 100px;
+margin: -100px 0 0;
+}
+
+/* 
+TODO: -------------------------------------------------------------------------------------------------------------
+TODO: DISEÑO CAROUSEL
+TODO: -------------------------------------------------------------------------------------------------------------
+*/
+
+/* Slideshow container */
+.slideshow-container {
+z-index: 1;
+background: url("../../img/3.jpg");
+/* background: #000; */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+color: var(--color);
+padding-top: 8rem;
+/* max-width: 1000px; */
+height: 20rem;
+text-align: center;
+font-size: 4rem;
+}
+
+.slideshow-container p {
+/* color: #000; */
+opacity: 1;
+}
+
+/* 
+TODO: -------------------------------------------------------------------------------------------------------------
+TODO: DISEÑO CUERPO
+TODO: -------------------------------------------------------------------------------------------------------------
+*/
+
+.main {
+display: flex;
+flex-wrap: wrap;
+}
+
+.container h2 {
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+/* Aumentar el tamaño del texto */
+font-size: 2rem;
+line-height: 1.6em;
+text-align: center;
+}
+
+.container {
+/* border: 2px solid #000; */
+/* background: greenyellow; */
+width: 80%;
+/* max-width: 850px; */
+margin: 2em auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.container p,
+h2 {
+/* font-family: 'Special Elite', cursive; */
+font-family: "Charter", sans-serif;
+font-size: 20px;
+margin-bottom: 1.5em;
+/* Margen Inferior en los Párrafos */
+text-align: justify;
+line-height: 28px;
+}
+
+.content {
+width: 66%;
+}
+
+.content-list {
+/* position: fixed; */
+/* top: 50%; */
+/* right: 0; */
+border: 1px solid rgba(51, 51, 51, 0.5);
+/* background: #f4f6fa; */
+/* transform: translateY(-50%); */
+}
+
+.content-list a {
+font-weight: 300;
+font-size: 20px;
+color: #111;
+}
+
+.content-list li {
+padding: 8px;
+}
+
+.nav-lateral {
+height: 100%;
+width: 34%;
+padding-left: 5em;
+}
+
+.nav-lateral-list p {
+width: 100%;
+font-size: 17px;
+}
+
+.card {
+padding: 1.5em;
+border-bottom: 1px solid rgba(33, 33, 33, 0.6);
+transition: box-shadow .3s;
+cursor: pointer;
+}
+
+.card:hover {
+box-shadow: 0 0 11px rgb(11 11 11 / 50%);
+}
+
+/* 
+?: ------------------------------------------------------------------------------------------------------------
+?: RESPONSIVE
+?: ------------------------------------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 1100px) {
+.container {
+  width: 90%;
+}
+
+.content,
+.nav-lateral{
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0;
-  clear: both;
 }
 
-.row img {
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
+.nav-lateral{
+  padding-left: 0;
 }
-
-.gallery ul li {
-  float: left;
-  margin: 0 0.8771929825%;
-  overflow: hidden;
 }
-
