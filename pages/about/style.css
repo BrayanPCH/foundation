@@ -31,7 +31,7 @@ html {
 /* Slideshow container */
 .slideshow-container {
   z-index: 1;
-  background: url("../../img/3.jpg");
+  background: url("../../img/fundacion.jpg");
   /* background: #000; */
   background-position: center;
   background-size: cover;
@@ -42,6 +42,19 @@ html {
   height: 20rem;
   text-align: center;
   font-size: 4rem;
+}
+
+.slideshow-container::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 1.57em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20rem;
+  background-color: #000;
+  opacity: 0.3;
 }
 
 .slideshow-container p {

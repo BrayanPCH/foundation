@@ -21,7 +21,7 @@
 
 .wrapper {
     z-index: 100;
-    background: var(--color);
+    background: var(--color3);
     /* position: fixed; */
     width: 100%;
     padding: 15px 20px;

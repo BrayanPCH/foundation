@@ -40,14 +40,15 @@
 }
 
 .slideshow-container::before {
+  z-index: 2;
   content: "";
   position: absolute;
-  top: 0;
+  top: 1.57em;
   right: 0;
   bottom: 0;
   left: 0;
   height: 20rem;
-  background-color: MidnightBlue;
+  background-color: #000;
   opacity: 0.3;
 }
 
