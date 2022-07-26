@@ -482,6 +482,7 @@ main h2 {
 .contacts__second-section__first-column input,
 .contacts__second-section__first-column textarea {
   display: block;
+  outline: none;
   border-radius: 3px;
   box-sizing: border-box;
   background-color: #D4AB01;
