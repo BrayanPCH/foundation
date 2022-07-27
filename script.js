@@ -7,11 +7,18 @@
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     var winTop = window.scrollY
-    if (winTop >= 150) {
-        header.classList.add("wrapper-active");
-    } else {
-        header.classList.remove("wrapper-active");
+    console.log(winTop);
+    if (winTop < 150) {
+        header.classList.remove("wrapper-active-intermediate");
+    }else{
+        if (winTop >=150 && winTop < 300) {
+            header.classList.add("wrapper-active-intermediate");
+            header.classList.remove("wrapper-active");
+        } else {
+            header.classList.add("wrapper-active");
+        }
     }
+    
 });
 
 /*

@@ -64,7 +64,6 @@
 }
 
 .banner__decoration {
-  display: none;
   position: absolute;
   z-index: 4;
   bottom: 0;
