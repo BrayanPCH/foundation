@@ -212,6 +212,10 @@ TODO: --------------------------------------------------------------------------
   background: #000;
 }
 
+.banner-last {
+  margin-top: 6.2em;
+}
+
 /* Slideshow container */
 .banner-container {
   z-index: 1;

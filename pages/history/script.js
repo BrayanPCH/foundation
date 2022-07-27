@@ -53,4 +53,23 @@ $(".gallery ul li a").click(function () {
 });
 });
 
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    const banner = document.querySelector(".banner");
+    var winTop = window.scrollY
+    if (winTop < 150) {
+        
+        header.classList.remove("wrapper-active-intermediate");
+    }else{
+        if (winTop >=150 && winTop < 300) {
+            header.classList.add("wrapper-active-intermediate");
+            header.classList.remove("wrapper-active");
+            banner.classList.remove("banner-last");
+        } else {
+            banner.classList.add("banner-last");
+            header.classList.add("wrapper-active");
+        }
+    }
+});
+
 
