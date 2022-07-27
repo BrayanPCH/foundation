@@ -7,7 +7,6 @@
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     var winTop = window.scrollY
-    console.log(winTop);
     if (winTop < 150) {
         header.classList.remove("wrapper-active-intermediate");
     }else{
@@ -18,7 +17,6 @@ window.addEventListener("scroll", () => {
             header.classList.add("wrapper-active");
         }
     }
-    
 });
 
 /*
