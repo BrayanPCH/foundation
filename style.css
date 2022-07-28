@@ -16,12 +16,18 @@ body {
   height: 100%;
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 62%;
+}
+
 .first-decoration {
   position: absolute;
   width: 6em;
   height: 6em;
-  background: #e2b70b;
-  left: 6em;
+  background: #E1C44D;
+  right: 90%;
 }
 
 .second-decoration {
@@ -29,16 +35,16 @@ body {
   width: 2em;
   height: 20em;
   background: #000;
-  right: 10em;
+  left: 90%;
 }
 
 .third-decoration {
   position: absolute;
   width: 6em;
   height: 6em;
-  background: #e2b70b;
-  right: 6em;
-  bottom: 15em;
+  background: #E1C44D;
+  left: 90%;
+  bottom: 0;
 }
 
 .fourth-decoration {
@@ -46,15 +52,15 @@ body {
   width: 2em;
   height: 20em;
   background: #000;
-  left: 10em;
-  bottom: 15em;
+  right: 90%;
+  bottom: 0;
 }
 
 .swiper {
   /* padding-top: 6em; */
   display: flex;
-  width: 80%;
-  height: 65%;
+  width: 81%;
+  height: 100%;
   justify-content: center;
   cursor: pointer;
 }
@@ -100,6 +106,7 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
+  z-index: 200;
   padding: 0 2rem;
   color: #fff;
 }
@@ -114,19 +121,57 @@ body {
   width: 14px;
 }
 
-.welcome {
-  display: none;
+/* .welcome {
+  z-index: 20;
   position: absolute;
-  left: 25%;
-  top: 40%;
-  z-index: 1000;
-  transform: translate(-50%, -50%);
-  background: rgba(212, 169, 0, 0.8);
-  padding: 3em 1em;
-  font-size: 20px;
-  font-weight: 200;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  top: 0;
+  background: rgba(225, 196, 77, 0.7);
+  padding: 1em 1em;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 16px;
+  text-transform: uppercase;
+} */
+
+.welcome {
+  color: #E1C44D;
+  z-index: 10;
+  position: absolute;
+  left: 9.5%;
+  /* transform: translate(-50%, 10%); */
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em 1em;
+  padding-top: 7em;
+  padding-left: 4em;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+  /* border-radius: 16px; */
   width: 17em;
-  border-radius: 2em;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.welcome p {
+  margin-bottom: 1em;
+}
+
+.carousel__logo {
+  z-index: 100;
+  position: absolute;
+  bottom: 4%;
+  right: 11%;
+  width: 7em;
+  height: 4em;
+}
+
+.carousel__logo img{
+  width: 100%;
+  height: 100%;
 }
 
 /* 
@@ -630,7 +675,7 @@ main h2 {
 footer {
   /* left: 0px;
   bottom: 0px; */
-  background: #111;
+  background: #000;
   /* display: block; */
 }
 
@@ -645,7 +690,7 @@ footer {
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: #111;
+  background: #000;
   width: 90%;
   height: auto;
   margin: 0 auto;
